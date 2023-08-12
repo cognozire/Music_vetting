@@ -44,7 +44,7 @@ if uploaded_file is not None:
             similarity_scores.append(similarity)
     
         similarity = np.max(similarity_scores)
-        if(similarity>0.76):
+        if(similarity>0.85):
             st.write(f"The uploaded audio is {selected_note} note.")
         else:
             st.write(f"The uploaded audio doesn't matches with {selected_note} note.")
